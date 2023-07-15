@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shoes Website</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .shoe {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .shoe img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shoes Website</h1>
+  </header>
+  
+  <div class="container">
+    <div class="shoe">
+      <img src="https://www.nike.com/in/t/air-max-ltd-3-shoe-JZrD9j/687977-111" alt="Shoe 1">
+      <h2>Nike Air Max</h2>
+      <p>$99.99</p>
+      <button onclick="addToCart('Nike Air Max')">Add to Cart</button>
+    </div>
+    
+    <div class="shoe">
+      <img src="https://www.nike.com/in/t/air-max-solo-shoes-D0Mfh7/FN0784-101" alt="Shoe 2">
+      <h2>Adidas Ultraboost</h2>
+      <p>$129.99</p>
+      <button onclick="addToCart('Adidas Ultraboost')">Add to Cart</button>
+    </div>
+    
+    <div class="shoe">
+      <img src="https://www.nike.com/in/t/air-max-excee-shoe-D7k4kV/DJ1975-100" alt="Shoe 3">
+      <h2>Puma Suede</h2>
+      <p>$79.99</p>
+      <button onclick="addToCart('Puma Suede')">Add to Cart</button>
+    </div>
+  </div>
+  
+  <script>
+    // JavaScript function to add items to the cart
+    function addToCart(item) {
+      // You can implement your own logic here, such as adding the item to a shopping cart object or redirecting to a checkout page
+      alert(item + ' added to cart!');
+    }
+  </script>
+</body>
+</html>
